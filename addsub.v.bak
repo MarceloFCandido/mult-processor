@@ -1,0 +1,17 @@
+module addsub(op1, op2, ctrl, out);
+    // Unidade logico-aritmetica
+    // Capaz de realizar:
+    // - Soma
+    // - Subtracao
+    // - Operação OR
+    // - Operação AND
+    // - Shift a direita
+    // - Shift a esquerda
+    // - Comparação de menor (atraves da subtração)
+    
+    parameter L_DATA = 16;
+    input [L_DATA - 1:0] op1, op2;
+    input [2:0] ctrl;
+    output [L_DATA - 1:0] out;
+    
+endmodule
