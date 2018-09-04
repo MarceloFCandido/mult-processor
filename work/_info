@@ -4,21 +4,40 @@ K3
 cModel Technology
 Z0 dC:\altera\13.0sp1
 vaddsub
-!i10b 1
-!s100 ZIh[llYV<`7n6k]R7[9j=0
-IRbZOag_l`@_LC7bM@B0^l2
-VLCheL7EQ9ROgNJFR@^?1z3
-dC:\Users\mlfca\Desktop\mult-processor
-w1535920116
-8C:\Users\mlfca\Desktop\mult-processor\addsub.v
-FC:\Users\mlfca\Desktop\mult-processor\addsub.v
+Z1 I6C:cPk:ngUPZ4G5>B5AZe1
+Z2 VLCheL7EQ9ROgNJFR@^?1z3
+Z3 dC:\Users\Aluno.NTIC-LAB-XYX\Desktop\mult-processor
+Z4 w1536086326
+Z5 8C:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/addsub.v
+Z6 FC:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/addsub.v
 L0 1
-OV;L;10.1d;51
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -reportprogress|300|-work|work|C:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/addsub.v|
+Z9 o-work work -O0
+Z10 !s100 >mNUYb<9jM5F7IbaWCoc;1
+Z11 !s108 1536086400.768000
+Z12 !s107 C:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/addsub.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcounter
+!i10b 1
+!s100 <L<lNW[Ah14ZF3dSUTE0d0
+I4>9C:jPCL7a=LB[UEED2X1
+VF]HXc`oD`6OaMg?9Rb]n62
+R3
+w1536087955
+Z13 8C:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/counter.v
+Z14 FC:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/counter.v
+L0 1
+R7
 r1
 !s85 0
 31
-!s108 1535920120.701000
-!s107 C:\Users\mlfca\Desktop\mult-processor\addsub.v|
-!s90 -reportprogress|300|-work|work|C:\Users\mlfca\Desktop\mult-processor\addsub.v|
+!s108 1536087959.359000
+!s107 C:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/counter.v|
+Z15 !s90 -reportprogress|300|-work|work|C:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/counter.v|
 !s101 -O0
-o-work work -O0
+R9

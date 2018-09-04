@@ -18,11 +18,11 @@ module addsub(op1, op2, ctrl, out);
         case (ctrl) 
             3'b000: out = op1 + op2;
             3'b001: out = op1 - op2;
-            3'b010: out = op1 | op2; // Bitwise OR
-            3'b011: out = op1 & op2; // Bitwise AND
-            3'b100: out = op1 << op2; // Left shift by |op2|
-            3'b101: out = op1 >> op2; // Right shift by |op2|
-            3'b110: out = (op1 < op2); // SLT
+            3'b010: out = op1 | op2; // op1 OR op2
+            3'b011: out = op1 & op2; // op1 AND op2
+            3'b100: out = op1 << op2; // SLL op1, op2
+            3'b101: out = op1 >> op2; // SLR op1, op2
+            3'b110: out = (op1 < op2); // op1 < op2
         endcase
     end
     
