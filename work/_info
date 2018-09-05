@@ -4,40 +4,118 @@ K3
 cModel Technology
 Z0 dC:\altera\13.0sp1
 vaddsub
-Z1 I6C:cPk:ngUPZ4G5>B5AZe1
-Z2 VLCheL7EQ9ROgNJFR@^?1z3
-Z3 dC:\Users\Aluno.NTIC-LAB-XYX\Desktop\mult-processor
-Z4 w1536086326
-Z5 8C:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/addsub.v
-Z6 FC:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/addsub.v
+Z1 !s100 ^B_CfFBeFMjP8]T:Q0Jih0
+Z2 IS77IZnF?HQSK7cNJP1E930
+Z3 VLCheL7EQ9ROgNJFR@^?1z3
+Z4 dC:\Users\mlfca\Desktop\mult-processor
+Z5 w1536152025
+Z6 8C:/Users/mlfca/Desktop/mult-processor/modules/addsub.v
+Z7 FC:/Users/mlfca/Desktop/mult-processor/modules/addsub.v
 L0 1
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -reportprogress|300|-work|work|C:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/addsub.v|
-Z9 o-work work -O0
-Z10 !s100 >mNUYb<9jM5F7IbaWCoc;1
-Z11 !s108 1536086400.768000
-Z12 !s107 C:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/addsub.v|
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/addsub.v|
+Z10 o-work work -O0
+Z11 !s108 1536143766.371000
+Z12 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/addsub.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vcounter
-!i10b 1
-!s100 <L<lNW[Ah14ZF3dSUTE0d0
-I4>9C:jPCL7a=LB[UEED2X1
-VF]HXc`oD`6OaMg?9Rb]n62
-R3
-w1536087955
-Z13 8C:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/counter.v
-Z14 FC:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/counter.v
+Z13 !s100 kd1]=c`o?INT>Tk_>i23W1
+Z14 I;6bXZ?G8YkgkCTk?dZRn40
+Z15 VF]HXc`oD`6OaMg?9Rb]n62
+R4
+R5
+Z16 8C:/Users/mlfca/Desktop/mult-processor/modules/counter.v
+Z17 FC:/Users/mlfca/Desktop/mult-processor/modules/counter.v
 L0 1
-R7
+R8
+r1
+31
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/counter.v|
+R10
+Z19 !s108 1536143766.607000
+Z20 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/counter.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdecodificaReg
+Z21 !s100 g9dR@HSWHC@bFCnccalX^0
+Z22 I9IQ6d]^QOA?bK]]:U_bhn1
+Z23 VSAM?d;lQFXIEg@FhkVF[N2
+R4
+R5
+Z24 8C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v
+Z25 FC:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v
+L0 1
+R8
+r1
+31
+Z26 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v|
+R10
+Z27 ndecodifica@reg
+Z28 !s108 1536143766.817000
+Z29 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vIR
+Z30 !s100 J:@M_Fa<DTAM?^nGDfoa^1
+Z31 I?;idKX2inoA>hDO_6ieEW1
+Z32 V3Ki><9VBXCDMdk:C<ORkF0
+R4
+Z33 w1536142821
+Z34 8C:/Users/mlfca/Desktop/mult-processor/modules/IR.v
+Z35 FC:/Users/mlfca/Desktop/mult-processor/modules/IR.v
+L0 1
+R8
+r1
+31
+Z36 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/IR.v|
+R10
+n@i@r
+Z37 !s108 1536143767.017000
+Z38 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/IR.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmultiplexador
+Z39 INhW?hjl10>kEzb@1=YIz30
+Z40 Vcm?RfAOUMl1=E4FP`hk2?3
+R4
+Z41 w1536143739
+Z42 8C:/Users/mlfca/Desktop/mult-processor/modules/multplexador.v
+Z43 FC:/Users/mlfca/Desktop/mult-processor/modules/multplexador.v
+L0 1
+R8
+r1
+31
+Z44 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/multplexador.v|
+R10
+!i10b 1
+Z45 !s100 IJYKz_U;0dbQag;mA;Y;f3
+!s85 0
+Z46 !s108 1536143767.230000
+Z47 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/multplexador.v|
+!s101 -O0
+vreg16bits
+!i10b 1
+Z48 !s100 HRd;?6MLg?MHOHJ=X=o?Y2
+Z49 IXMC<UW;@hdcd52W2MN4AE1
+Z50 Vk^D`R6AI=1lKA0gd8]O>z1
+R4
+Z51 w1536142469
+Z52 8C:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v
+Z53 FC:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v
+L0 1
+R8
 r1
 !s85 0
 31
-!s108 1536087959.359000
-!s107 C:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/counter.v|
-Z15 !s90 -reportprogress|300|-work|work|C:/Users/Aluno.NTIC-LAB-XYX/Desktop/mult-processor/counter.v|
+!s108 1536143767.563000
+!s107 C:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v|
+Z54 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v|
 !s101 -O0
-R9
+R10

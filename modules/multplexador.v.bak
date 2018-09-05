@@ -10,7 +10,7 @@ module  multiplexador(Dado, reg0, reg1, reg2, reg3, reg4, reg5, reg6, reg7, G, c
 	
 	assign controle = {controlReg, Gout, Din};
 	
-	always @(controle, Dado, reg0, reg1, reg2, reg3, reg4, reg5, reg6, reg7, G) begin
+	always @(controle, Dado, reg0, reg1, reg2, reg3, reg4, reg5, reg6, reg7, G, Gout, Din) begin
 		if(controle[9])	// Registradores
 			saida = reg7;
 		else
