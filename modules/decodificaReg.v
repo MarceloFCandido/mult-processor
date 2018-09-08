@@ -2,8 +2,8 @@ module decodificaReg(W,En,Y);
 	input [2:0]W;
 	input En;
 	output reg [7:0]Y;
-	
-	always@(W or En)	begin
+															// RegX = R0 RegY = R5
+	always@(W or En)	begin							// always @(posedge Clock)
 		if(En == 1)
 			case(W)
 				3'b000: Y = 8'b00000001;	//Reg0
