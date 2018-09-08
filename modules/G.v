@@ -1,10 +1,10 @@
-module reg16bitsP(in,out,write,clock);
+module reg16bitsN(in,out,write,clock);
 
 	input [15:0]in;
 	input write, clock;
 	output reg [15:0]out;
 	
-	always @(posedge clock)begin
+	always @(negedge clock)begin
 		if(write)begin 
 			out <= in;		
 		end

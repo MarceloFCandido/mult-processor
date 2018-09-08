@@ -5,4 +5,67 @@ Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 Top level modules:
 	counter
 
+} {} {}} C:/Users/mlfca/Desktop/mult-processor/modules/multiplexador.v {1 {vlog -work work C:/Users/mlfca/Desktop/mult-processor/modules/multiplexador.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module multiplexador
+
+Top level modules:
+	multiplexador
+
+} {} {}} C:/Users/mlfca/Desktop/mult-processor/building/ASreg.v {1 {vlog -work work C:/Users/mlfca/Desktop/mult-processor/building/ASreg.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module ASreg
+
+Top level modules:
+	ASreg
+
+} {} {}} C:/Users/mlfca/Desktop/mult-processor/modules/G.v {1 {vlog -work work C:/Users/mlfca/Desktop/mult-processor/modules/G.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module reg16bitsN
+
+Top level modules:
+	reg16bitsN
+
+} {} {}} C:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v {1 {vlog -work work C:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module reg16bitsP
+
+Top level modules:
+	reg16bitsP
+
+} {} {}} C:/Users/mlfca/Desktop/mult-processor/modules/IR.v {1 {vlog -work work C:/Users/mlfca/Desktop/mult-processor/modules/IR.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module IR
+
+Top level modules:
+	IR
+
+} {} {}} C:/Users/mlfca/Desktop/mult-processor/modules/addsub.v {1 {vlog -work work C:/Users/mlfca/Desktop/mult-processor/modules/addsub.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module addsub
+
+Top level modules:
+	addsub
+
+} {} {}} C:/Users/mlfca/Desktop/mult-processor/modules/counter.v {1 {vlog -work work C:/Users/mlfca/Desktop/mult-processor/modules/counter.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v {1 {vlog -work work C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module decodificaReg
+
+Top level modules:
+	decodificaReg
+
+} {} {}} C:/Users/mlfca/Desktop/mult-processor/modules/multplexador.v {1 {vlog -work work C:/Users/mlfca/Desktop/mult-processor/modules/multplexador.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module multiplexador
+
+Top level modules:
+	multiplexador
+
 } {} {}}

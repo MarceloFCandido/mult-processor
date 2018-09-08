@@ -17,105 +17,165 @@ r1
 31
 Z9 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/addsub.v|
 Z10 o-work work -O0
-Z11 !s108 1536143766.371000
+Z11 !s108 1536428350.250000
 Z12 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/addsub.v|
 !i10b 1
 !s85 0
 !s101 -O0
+vASreg
+!i10b 1
+Z13 !s100 RUlP_JHM12Tl9QNlJ]mXa0
+Z14 IlFZ4@@;M1SR6F`]6X^Ve=1
+Z15 VDQ2ile;MPPDD:3lS7U2dS0
+R4
+Z16 w1536429153
+Z17 8C:/Users/mlfca/Desktop/mult-processor/building/ASreg.v
+Z18 FC:/Users/mlfca/Desktop/mult-processor/building/ASreg.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1536429187.792000
+!s107 C:/Users/mlfca/Desktop/mult-processor/building/ASreg.v|
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/building/ASreg.v|
+!s101 -O0
+R10
+Z20 n@a@sreg
 vcounter
-Z13 !s100 kd1]=c`o?INT>Tk_>i23W1
-Z14 I;6bXZ?G8YkgkCTk?dZRn40
-Z15 VF]HXc`oD`6OaMg?9Rb]n62
+Z21 !s100 kd1]=c`o?INT>Tk_>i23W1
+Z22 I;6bXZ?G8YkgkCTk?dZRn40
+Z23 VF]HXc`oD`6OaMg?9Rb]n62
 R4
 R5
-Z16 8C:/Users/mlfca/Desktop/mult-processor/modules/counter.v
-Z17 FC:/Users/mlfca/Desktop/mult-processor/modules/counter.v
+Z24 8C:/Users/mlfca/Desktop/mult-processor/modules/counter.v
+Z25 FC:/Users/mlfca/Desktop/mult-processor/modules/counter.v
 L0 1
 R8
 r1
 31
-Z18 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/counter.v|
+Z26 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/counter.v|
 R10
-Z19 !s108 1536143766.607000
-Z20 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/counter.v|
+Z27 !s108 1536428350.492000
+Z28 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/counter.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vdecodificaReg
-Z21 !s100 g9dR@HSWHC@bFCnccalX^0
-Z22 I9IQ6d]^QOA?bK]]:U_bhn1
-Z23 VSAM?d;lQFXIEg@FhkVF[N2
+Z29 !s100 g9dR@HSWHC@bFCnccalX^0
+Z30 I9IQ6d]^QOA?bK]]:U_bhn1
+Z31 VSAM?d;lQFXIEg@FhkVF[N2
 R4
-R5
-Z24 8C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v
-Z25 FC:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v
+Z32 w1536425327
+Z33 8C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v
+Z34 FC:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v
 L0 1
 R8
 r1
 31
-Z26 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v|
+Z35 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v|
 R10
-Z27 ndecodifica@reg
-Z28 !s108 1536143766.817000
-Z29 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v|
+Z36 ndecodifica@reg
+Z37 !s108 1536428350.737000
+Z38 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vIR
-Z30 !s100 J:@M_Fa<DTAM?^nGDfoa^1
-Z31 I?;idKX2inoA>hDO_6ieEW1
-Z32 V3Ki><9VBXCDMdk:C<ORkF0
+Z39 !s100 eUZn^5[;D1HUOV_`_eJR12
+Z40 I561zmEAY1B>>iQ0[2S]AV1
+Z41 VAbnocOQ?B8i33W5oZ?_BF2
 R4
-Z33 w1536142821
-Z34 8C:/Users/mlfca/Desktop/mult-processor/modules/IR.v
-Z35 FC:/Users/mlfca/Desktop/mult-processor/modules/IR.v
+R32
+Z42 8C:/Users/mlfca/Desktop/mult-processor/modules/IR.v
+Z43 FC:/Users/mlfca/Desktop/mult-processor/modules/IR.v
 L0 1
 R8
 r1
 31
-Z36 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/IR.v|
+Z44 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/IR.v|
 R10
 n@i@r
-Z37 !s108 1536143767.017000
-Z38 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/IR.v|
+Z45 !s108 1536428350.958000
+Z46 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/IR.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vmultiplexador
-Z39 INhW?hjl10>kEzb@1=YIz30
-Z40 Vcm?RfAOUMl1=E4FP`hk2?3
+Z47 !s100 lheJaWYlB6F^T`e=IFi?A1
+Z48 I[SJ_:2>IFXSLGR9;`<3Xe0
+Z49 Vcm?RfAOUMl1=E4FP`hk2?3
 R4
-Z41 w1536143739
-Z42 8C:/Users/mlfca/Desktop/mult-processor/modules/multplexador.v
-Z43 FC:/Users/mlfca/Desktop/mult-processor/modules/multplexador.v
+R32
+Z50 8C:/Users/mlfca/Desktop/mult-processor/modules/multiplexador.v
+Z51 FC:/Users/mlfca/Desktop/mult-processor/modules/multiplexador.v
 L0 1
 R8
 r1
 31
-Z44 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/multplexador.v|
+Z52 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/multiplexador.v|
 R10
+Z53 !s108 1536428351.162000
+Z54 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/multiplexador.v|
 !i10b 1
-Z45 !s100 IJYKz_U;0dbQag;mA;Y;f3
 !s85 0
-Z46 !s108 1536143767.230000
-Z47 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/multplexador.v|
 !s101 -O0
 vreg16bits
-!i10b 1
-Z48 !s100 HRd;?6MLg?MHOHJ=X=o?Y2
-Z49 IXMC<UW;@hdcd52W2MN4AE1
-Z50 Vk^D`R6AI=1lKA0gd8]O>z1
+Z55 !s100 McCgBRLR_32je`>UnL[P73
+Z56 IFmzbWRoS``m=M_4YoVWXX0
+Z57 Vk^D`R6AI=1lKA0gd8]O>z1
 R4
-Z51 w1536142469
-Z52 8C:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v
-Z53 FC:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v
+R32
+Z58 8C:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v
+Z59 FC:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v
 L0 1
 R8
 r1
-!s85 0
 31
-!s108 1536143767.563000
-!s107 C:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v|
-Z54 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v|
-!s101 -O0
+Z60 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v|
 R10
+Z61 !s108 1536425635.617000
+Z62 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/reg16bits.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vreg16bitsN
+Z63 IA^XgD:L@2JOgbl7BV8@EY1
+Z64 V`@4hB<8nlINWYDGQ6YaPO2
+R4
+Z65 w1536428346
+Z66 8C:/Users/mlfca/Desktop/mult-processor/modules/G.v
+Z67 FC:/Users/mlfca/Desktop/mult-processor/modules/G.v
+L0 1
+R8
+r1
+31
+Z68 !s90 -reportprogress|300|-work|work|C:/Users/mlfca/Desktop/mult-processor/modules/G.v|
+R10
+Z69 nreg16bits@n
+Z70 !s100 339:XA8T;`9a^]LC2f[Ib0
+Z71 !s108 1536428352.010000
+Z72 !s107 C:/Users/mlfca/Desktop/mult-processor/modules/G.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vreg16bitsP
+Z73 !s100 :C^DbKdZERH8fP<P>SQCl3
+Z74 IEUJiM2G0L4?ceIe;0kR:80
+Z75 VhGMdVWH`d2Z>8oGN<NELW2
+R4
+Z76 w1536428232
+R58
+R59
+L0 1
+R8
+r1
+31
+R60
+R10
+Z77 nreg16bits@p
+Z78 !s108 1536428351.425000
+R62
+!i10b 1
+!s85 0
+!s101 -O0
