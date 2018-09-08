@@ -1,4 +1,4 @@
-module reg16bits(in,out,write,clock);
+module reg16bitsP(in,out,write,clock);
 
 	input [15:0]in;
 	input write, clock;

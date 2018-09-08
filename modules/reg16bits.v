@@ -1,8 +1,8 @@
 module reg16bitsP(in,out,write,clock);
 
-	input [15:0]in;
+	input [15:0] in;
 	input write, clock;
-	output reg [15:0]out;
+	output reg [15:0] out;
 	
 	always @(posedge clock)begin
 		if(write)begin 
