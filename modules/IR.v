@@ -1,12 +1,17 @@
-module IR(in,out,write,clock);
+module IR(in ,out, write, clock);
 
-	input [9:0]in;
+	/***************************************************************************
+	* Registrador de instrucoes. Responsavel por guardar a instrucao atual no
+	* interior do processador. 
+	***************************************************************************/
+
+	input [9:0] in;
 	input write, clock;
-	output reg [9:0]out;
-	
-	always @(posedge clock)begin
-		if(write)begin 
-			out = in;		
+	output reg [9:0] out;
+
+	always @(posedge clock) begin
+		if (write) begin
+			out = in;
 		end
 	end
 endmodule

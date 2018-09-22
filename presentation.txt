@@ -1,7 +1,0 @@
-HEX7-HEX06 - Opcode
-HEX5       - Reg. dest.
-HEX4       - Reg. fonte
-HEX3       - Reg. 3
-HEX2       - Reg. 2
-HEX1       - Reg. 1
-HEX0       - Reg. 0
