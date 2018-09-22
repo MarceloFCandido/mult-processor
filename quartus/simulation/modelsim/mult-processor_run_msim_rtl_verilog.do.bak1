@@ -1,0 +1,18 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsP.v}
+vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsN.v}
+vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/processor.v}
+vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/multiplexador.v}
+vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/IR.v}
+vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v}
+vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/counter.v}
+vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/addsub.v}
+vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/quartus {C:/Users/mlfca/Desktop/mult-processor/quartus/lpmRAM.v}
+vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/building {C:/Users/mlfca/Desktop/mult-processor/building/ram-proc.v}
+

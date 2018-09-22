@@ -1,0 +1,22 @@
+# Compile of addsub.v was successful.
+# Compile of counter.v was successful.
+# Compile of decodificaReg.v was successful.
+# Compile of IR.v was successful.
+# Compile of multiplexador.v was successful.
+# Compile of processor.v was successful.
+# Compile of reg16bitsN.v was successful.
+# Compile of reg16bitsP.v was successful.
+# Compile of ram-proc.v was successful.
+# 9 compiles, 0 failed with no errors. 
+# Compile of addsub.v was successful.
+# Compile of counter.v was successful.
+# Compile of decodificaReg.v was successful.
+# Compile of IR.v was successful.
+# Compile of multiplexador.v was successful.
+# Compile of processor.v was successful.
+# Compile of reg16bitsN.v was successful.
+# Compile of reg16bitsP.v was successful.
+# Compile of ram-proc.v was successful.
+# Compile of lpmRAM.v was successful.
+# 10 compiles, 0 failed with no errors. 
+vsim +altera -Lf altera_mf_ver -do mult-processor_run_msim_rtl_verilog.do -l msim_transcript -gui work.ram_proc

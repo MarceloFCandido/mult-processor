@@ -6,11 +6,7 @@ module IR(in,out,write,clock);
 	
 	always @(posedge clock)begin
 		if(write)begin 
-			out <= in;		
-		end
-		
-		else begin
-			out <= out;
+			out = in;		
 		end
 	end
 endmodule

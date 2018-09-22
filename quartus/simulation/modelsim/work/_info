@@ -1,0 +1,200 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aluno\Desktop\Trabalhando\mult-processor\quartus\simulation\modelsim
+vaddsub
+Z1 !s100 N?Rg8dJiDCBZPJ>@_`6Db0
+Z2 IFA`fQ6Sml7U^Ffkj:l_4N2
+Z3 VLCheL7EQ9ROgNJFR@^?1z3
+Z4 dC:\Users\Aluno\Desktop\Trabalhando\mult-processor\quartus\simulation\modelsim
+Z5 w1537185415
+Z6 8C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/addsub.v
+Z7 FC:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/addsub.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/addsub.v|
+Z10 o-work work -O0
+Z11 !s108 1537185649.227000
+Z12 !s107 C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/addsub.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcounter
+Z13 !s100 ]0zzWX;^MI3BOHLESdMU82
+Z14 I=CYG1k<6YU5czSD_T?Ti<2
+Z15 VK_S=fWZ8hnXb2<iNGi<4M1
+R4
+R5
+Z16 8C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/counter.v
+Z17 FC:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/counter.v
+L0 1
+R8
+r1
+31
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/counter.v|
+R10
+Z19 !s108 1537185649.388000
+Z20 !s107 C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/counter.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdecodificaReg
+Z21 !s100 X@]=:L8_U^VWaeOVWBl1L1
+Z22 Ih[i@RDlGHOD[z7?ZGzM6]0
+Z23 VSAM?d;lQFXIEg@FhkVF[N2
+R4
+Z24 w1537185399
+Z25 8C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/decodificaReg.v
+Z26 FC:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/decodificaReg.v
+L0 1
+R8
+r1
+31
+Z27 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/decodificaReg.v|
+R10
+Z28 ndecodifica@reg
+Z29 !s108 1537185649.542000
+Z30 !s107 C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/decodificaReg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vIR
+Z31 !s100 fA15PB9nUz]QhGHB>eC<E2
+Z32 I7j]zi`[5?V_S5N8Dg1JiJ3
+Z33 VAbnocOQ?B8i33W5oZ?_BF2
+R4
+R5
+Z34 8C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/IR.v
+Z35 FC:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/IR.v
+L0 1
+R8
+r1
+31
+Z36 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/IR.v|
+R10
+n@i@r
+Z37 !s108 1537185649.726000
+Z38 !s107 C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/IR.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vlpmRAM
+!i10b 1
+Z39 !s100 gXSk^Mi`U3Va]eIlbj?YT3
+Z40 IlGSXfNYQ17SlM1gZDQ;zC2
+Z41 VQgdKNNc]TJRnb5GRXdeG22
+R4
+R5
+Z42 8C:/Users/Aluno/Desktop/Trabalhando/mult-processor/quartus/lpmRAM.v
+Z43 FC:/Users/Aluno/Desktop/Trabalhando/mult-processor/quartus/lpmRAM.v
+L0 39
+R8
+r1
+!s85 0
+31
+!s108 1537185650.498000
+!s107 C:/Users/Aluno/Desktop/Trabalhando/mult-processor/quartus/lpmRAM.v|
+Z44 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/Trabalhando/mult-processor/quartus/lpmRAM.v|
+!s101 -O0
+R10
+Z45 nlpm@r@a@m
+vmultiplexador
+Z46 !s100 DWM9FUzHIgK=;e:;oXQd=0
+Z47 Izl[0>4V?Z]67MlCM1b_b42
+Z48 Vcm?RfAOUMl1=E4FP`hk2?3
+R4
+R24
+Z49 8C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/multiplexador.v
+Z50 FC:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/multiplexador.v
+L0 1
+R8
+r1
+31
+Z51 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/multiplexador.v|
+R10
+Z52 !s108 1537185649.886000
+Z53 !s107 C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/multiplexador.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vprocessor
+Z54 !s100 EGnIL;E`f0bbC=?Tb_jX<1
+Z55 Ik3>lo9jaO`b<1gHA>?jU_2
+Z56 VaJSdhG>7^YnQbjVY3O8U83
+R4
+R5
+Z57 8C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/processor.v
+Z58 FC:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/processor.v
+L0 1
+R8
+r1
+31
+Z59 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/processor.v|
+R10
+Z60 !s108 1537185650.013000
+Z61 !s107 C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/processor.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vram_proc
+Z62 !s100 f4UHfNdkGO0k<O7c4aiWa0
+Z63 I4ADak=8eoX=ejRT^2bfjA2
+Z64 VZ2?QkW_XSBBF05oENGbD;2
+R4
+R5
+Z65 8C:/Users/Aluno/Desktop/Trabalhando/mult-processor/building/ram-proc.v
+Z66 FC:/Users/Aluno/Desktop/Trabalhando/mult-processor/building/ram-proc.v
+L0 2
+R8
+r1
+31
+Z67 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/Trabalhando/mult-processor/building/ram-proc.v|
+R10
+!i10b 1
+!s85 0
+Z68 !s108 1537185650.380000
+Z69 !s107 C:/Users/Aluno/Desktop/Trabalhando/mult-processor/building/ram-proc.v|
+!s101 -O0
+vreg16bitsN
+Z70 !s100 UM:jjdYkXjaWjD^bgL0W20
+Z71 IQ7S8YSN=2gT=oS:N]`9d40
+Z72 V`@4hB<8nlINWYDGQ6YaPO2
+R4
+R5
+Z73 8C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/reg16bitsN.v
+Z74 FC:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/reg16bitsN.v
+L0 1
+R8
+r1
+31
+Z75 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/reg16bitsN.v|
+R10
+Z76 nreg16bits@n
+Z77 !s108 1537185650.135000
+Z78 !s107 C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/reg16bitsN.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vreg16bitsP
+Z79 !s100 @>B=F66AZJ44XQ7Em8FT12
+Z80 IP]8GWT3omFhLMlm>^7Q:92
+Z81 VN>3;PQ7[^nNjiO`maUAjg0
+R4
+R5
+Z82 8C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/reg16bitsP.v
+Z83 FC:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/reg16bitsP.v
+L0 1
+R8
+r1
+31
+Z84 !s90 -reportprogress|300|-work|work|C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/reg16bitsP.v|
+R10
+Z85 nreg16bits@p
+Z86 !s108 1537185650.258000
+Z87 !s107 C:/Users/Aluno/Desktop/Trabalhando/mult-processor/modules/reg16bitsP.v|
+!i10b 1
+!s85 0
+!s101 -O0

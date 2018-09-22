@@ -1,0 +1,252 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\mlfca\Desktop\mult-processor\quartus\simulation\modelsim
+vaddsub
+Ii[fA1FaTYB?ebgZe<ZCjE0
+Z1 VLCheL7EQ9ROgNJFR@^?1z3
+Z2 dC:\Users\mlfca\Desktop\mult-processor\quartus\simulation\modelsim
+Z3 w1537627702
+8C:/Users/mlfca/Desktop/mult-processor/modules/addsub.v
+FC:/Users/mlfca/Desktop/mult-processor/modules/addsub.v
+L0 1
+Z4 OV;L;10.1d;51
+r1
+31
+Z5 o-vlog01compat -work work -O0
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules -O0
+!i10b 1
+!s100 Zk5SA74dSDUVbAbU=QEWT0
+!s85 0
+!s108 1537639882.590000
+!s107 C:/Users/mlfca/Desktop/mult-processor/modules/addsub.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/mult-processor/modules|C:/Users/mlfca/Desktop/mult-processor/modules/addsub.v|
+!s101 -O0
+vcounter
+IeG37Ymf90W53UOh^A`nQ?2
+VmM_InF@IH9Yj2]fEj99WM2
+R2
+R3
+8C:/Users/mlfca/Desktop/mult-processor/modules/counter.v
+FC:/Users/mlfca/Desktop/mult-processor/modules/counter.v
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 ;UF[>=SjWP]djDH[lQWD=2
+!s85 0
+!s108 1537639882.390000
+!s107 C:/Users/mlfca/Desktop/mult-processor/modules/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/mult-processor/modules|C:/Users/mlfca/Desktop/mult-processor/modules/counter.v|
+!s101 -O0
+vdecodificaReg
+IXiBEAH<SzALz_1aRK@Q5I2
+Z7 VSAM?d;lQFXIEg@FhkVF[N2
+R2
+w1537626429
+8C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v
+FC:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v
+L0 1
+R4
+r1
+31
+R5
+R6
+Z8 ndecodifica@reg
+!i10b 1
+!s100 g9dR@HSWHC@bFCnccalX^0
+!s85 0
+!s108 1537639882.206000
+!s107 C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/mult-processor/modules|C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v|
+!s101 -O0
+vIR
+IG8R9h1@MX@SKj0fR7YJ4g3
+Z9 VAbnocOQ?B8i33W5oZ?_BF2
+R2
+R3
+8C:/Users/mlfca/Desktop/mult-processor/modules/IR.v
+FC:/Users/mlfca/Desktop/mult-processor/modules/IR.v
+L0 1
+R4
+r1
+31
+R5
+R6
+n@i@r
+!i10b 1
+!s100 hg:GhT4hk6RLPPEkSWVcn3
+!s85 0
+!s108 1537639881.985000
+!s107 C:/Users/mlfca/Desktop/mult-processor/modules/IR.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/mult-processor/modules|C:/Users/mlfca/Desktop/mult-processor/modules/IR.v|
+!s101 -O0
+vlpmRAM
+Iba7[7hHgCNNT[Z``Xn`K_3
+Z10 VQgdKNNc]TJRnb5GRXdeG22
+R2
+w1537627703
+8C:/Users/mlfca/Desktop/mult-processor/quartus/lpmRAM.v
+FC:/Users/mlfca/Desktop/mult-processor/quartus/lpmRAM.v
+L0 39
+R4
+r1
+31
+R5
+Z11 nlpm@r@a@m
+!i10b 1
+!s100 PHPEVeN5F6R=^TYfDV?V>3
+!s85 0
+!s108 1537639882.910000
+!s107 C:/Users/mlfca/Desktop/mult-processor/quartus/lpmRAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/mult-processor/quartus|C:/Users/mlfca/Desktop/mult-processor/quartus/lpmRAM.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/quartus -O0
+vmultiplexador
+ITc`7F2;D5Z00DC?^hIDC33
+Z12 Vcm?RfAOUMl1=E4FP`hk2?3
+R2
+R3
+8C:/Users/mlfca/Desktop/mult-processor/modules/multiplexador.v
+FC:/Users/mlfca/Desktop/mult-processor/modules/multiplexador.v
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 eY=[koG9aCA@W<VHTAj>K0
+!s85 0
+!s108 1537639881.821000
+!s107 C:/Users/mlfca/Desktop/mult-processor/modules/multiplexador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/mult-processor/modules|C:/Users/mlfca/Desktop/mult-processor/modules/multiplexador.v|
+!s101 -O0
+vPC
+!i10b 1
+!s100 oFHz[Uj<zz[OF90iWN6`P0
+I`;Eh7G03R;:^4A9^W`YKD2
+V5RII_1E0WPbJ?ahIP7fAD1
+R2
+R3
+8C:/Users/mlfca/Desktop/mult-processor/modules/PC.v
+FC:/Users/mlfca/Desktop/mult-processor/modules/PC.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1537639883.652000
+!s107 C:/Users/mlfca/Desktop/mult-processor/modules/PC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/mult-processor/modules|C:/Users/mlfca/Desktop/mult-processor/modules/PC.v|
+!s101 -O0
+R5
+R6
+n@p@c
+vprocessor
+Im7^UihMTF>1Ui^^6B3X]z1
+VC_MI@IW]l^oQzfRY4:SG13
+R2
+R3
+8C:/Users/mlfca/Desktop/mult-processor/modules/processor.v
+FC:/Users/mlfca/Desktop/mult-processor/modules/processor.v
+L0 1
+R4
+r1
+31
+R5
+R6
+!i10b 1
+!s100 ED@0[_6_KTd?OQ;ZmIibV1
+!s85 0
+!s108 1537639881.619000
+!s107 C:/Users/mlfca/Desktop/mult-processor/modules/processor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/mult-processor/modules|C:/Users/mlfca/Desktop/mult-processor/modules/processor.v|
+!s101 -O0
+vram_proc
+ImTXoP1nVAAFB9lESM_@:k0
+Vi1g];B<hiDB@kM8c;ZJ3R3
+R2
+w1537627980
+8C:/Users/mlfca/Desktop/mult-processor/building/ram-proc.v
+FC:/Users/mlfca/Desktop/mult-processor/building/ram-proc.v
+L0 2
+R4
+r1
+31
+R5
+!i10b 1
+!s100 El1Q@aE5S_J5ia_^A8<WF0
+!s85 0
+!s108 1537639883.197000
+!s107 C:/Users/mlfca/Desktop/mult-processor/building/ram-proc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/mult-processor/building|C:/Users/mlfca/Desktop/mult-processor/building/ram-proc.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/building -O0
+vreg16bitsN
+I;kWbX5dOUI5S:QXVXNiN00
+Z13 V`@4hB<8nlINWYDGQ6YaPO2
+R2
+R3
+8C:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsN.v
+FC:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsN.v
+L0 1
+R4
+r1
+31
+R5
+R6
+Z14 nreg16bits@n
+!i10b 1
+!s100 ^H>Z0Qj:bWllF?jW6RkQK1
+!s85 0
+!s108 1537639881.395000
+!s107 C:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsN.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/mult-processor/modules|C:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsN.v|
+!s101 -O0
+vreg16bitsP
+IfFiY[RR1@Xm=`h:2TYMLm0
+V0XDYgZfT6X1m4<ooGJWE@3
+R2
+w1537639306
+8C:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsP.v
+FC:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsP.v
+L0 1
+R4
+r1
+31
+R5
+Z15 nreg16bits@p
+R6
+!i10b 1
+!s100 ]zPdfVKm2jU[=o087HKdZ3
+!s85 0
+!s108 1537639881.057000
+!s107 C:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/mult-processor/modules|C:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsP.v|
+!s101 -O0
+vregW
+I4d034O1:@eSJQMe9g`6;F3
+VzZA^3Z6P>N6X_3za61zg>0
+R2
+R3
+8C:/Users/mlfca/Desktop/mult-processor/modules/regW.v
+FC:/Users/mlfca/Desktop/mult-processor/modules/regW.v
+L0 1
+R4
+r1
+31
+R5
+R6
+nreg@w
+!i10b 1
+!s100 9mZ`ZX2UE^o6m3LkBWQ^A0
+!s85 0
+!s108 1537639883.436000
+!s107 C:/Users/mlfca/Desktop/mult-processor/modules/regW.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/mlfca/Desktop/mult-processor/modules|C:/Users/mlfca/Desktop/mult-processor/modules/regW.v|
+!s101 -O0

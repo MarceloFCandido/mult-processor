@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'processor:proc|decDIN'
+Slack : -6.547
+TNS   : -96.254
+
+Type  : Slow Model Setup 'processor:proc|ctrlULA[0]'
+Slack : -6.089
+TNS   : -91.630
+
+Type  : Slow Model Setup 'run'
+Slack : -4.851
+TNS   : -71.078
+
+Type  : Slow Model Setup 'clock'
+Slack : -3.905
+TNS   : -616.927
+
+Type  : Slow Model Hold 'processor:proc|ctrlULA[0]'
+Slack : -1.953
+TNS   : -19.459
+
+Type  : Slow Model Hold 'run'
+Slack : -1.701
+TNS   : -1.701
+
+Type  : Slow Model Hold 'clock'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Hold 'processor:proc|decDIN'
+Slack : 0.424
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -2.000
+TNS   : -353.380
+
+Type  : Slow Model Minimum Pulse Width 'run'
+Slack : -1.380
+TNS   : -1.380
+
+Type  : Slow Model Minimum Pulse Width 'processor:proc|ctrlULA[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'processor:proc|decDIN'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'processor:proc|decDIN'
+Slack : -3.360
+TNS   : -50.266
+
+Type  : Fast Model Setup 'processor:proc|ctrlULA[0]'
+Slack : -2.307
+TNS   : -33.763
+
+Type  : Fast Model Setup 'run'
+Slack : -2.057
+TNS   : -29.450
+
+Type  : Fast Model Setup 'clock'
+Slack : -1.842
+TNS   : -187.599
+
+Type  : Fast Model Hold 'processor:proc|ctrlULA[0]'
+Slack : -1.246
+TNS   : -14.706
+
+Type  : Fast Model Hold 'run'
+Slack : -0.391
+TNS   : -0.391
+
+Type  : Fast Model Hold 'clock'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'processor:proc|decDIN'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -2.000
+TNS   : -353.380
+
+Type  : Fast Model Minimum Pulse Width 'run'
+Slack : -1.380
+TNS   : -1.380
+
+Type  : Fast Model Minimum Pulse Width 'processor:proc|ctrlULA[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'processor:proc|decDIN'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,65 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions
+-- and other software and tools, and its AMPP partner logic
+-- functions, and any output files from any of the foregoing
+-- (including device programming or simulation files), and any
+-- associated documentation or information are expressly subject
+-- to the terms and conditions of the Altera Program License
+-- Subscription Agreement, Altera MegaCore Function License
+-- Agreement, or other applicable license agreement, including,
+-- without limitation, that your use is for the sole purpose of
+-- programming logic devices manufactured by Altera and sold by
+-- Altera or its authorized distributors.  Please refer to the
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=16;
+DEPTH=48;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	  [0..2]  :   0000000000000000;
+	  3   :   0000000000000100;
+    4    :    0000000000000111; -- mvi02
+    5    :    0000000000000010; -- mvi02
+    6    :    0000000000010111; -- mvi13
+    7    :    0000000000000011; -- mvi13
+    8    :    0000000000010001; -- add10
+    9    :    0000000000100111; -- mvi26
+    10    :    0000000000000110; -- mvi26
+    11    :    0000000010100010; -- sub21
+    12    :    0000000100111000; -- mv32
+    13    :    0000000110000011; -- or03
+    14    :    0000000110000100; -- sll03
+    15    :    0000000110000101; -- srl03
+    16    :    0000000010000110; -- slt01
+    17    :    0000000110000110; -- slt03
+    18    :    0000000000110111; -- mvi33
+    19    :    0000000000000011; -- mvi33
+    20    :    0000000110000001; -- add03
+    21    :    0000000000000111; -- mvi00
+    22    :    0000000000000000; -- mvi00
+    23    :    0000000110101011; -- ld23
+    24    :    0000000110100001; -- add23
+    25    :    0000000000101010; -- sd20
+    26    :    0000000000001011; -- ld00
+    27    :    0000000110000010; -- sub03
+    28    :    0000000000000111; -- mvi00
+    29    :    0000000000000000; -- mvi00
+    30    :    0000000000000001; -- add00
+    31    :    0000000100001001; -- mvnz02
+    32    :    0000000110010010; -- sub13
+    33    :    0000000100001001; -- mvnz02
+    34    :    0000000110000001; -- add03
+    35    :    0000000000100111; -- mvi21
+    36    :    0000000000000001; -- mvi21
+    37    :    0000000001000111; -- mvi4A
+		38    :    0000000000001010; -- mvi4A
+    39    :    0000001111011000; -- mv57
+    40    :    0000000101000010; -- sub42
+    41    :    0000001011111001; -- mvnz75
+	  [42..47]  :   0000000000000000;
+END;

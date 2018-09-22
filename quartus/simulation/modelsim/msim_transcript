@@ -1,0 +1,196 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do mult-processor_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsP.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg16bitsP
+# 
+# Top level modules:
+# 	reg16bitsP
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsN.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg16bitsN
+# 
+# Top level modules:
+# 	reg16bitsN
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/processor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module processor
+# 
+# Top level modules:
+# 	processor
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/multiplexador.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module multiplexador
+# 
+# Top level modules:
+# 	multiplexador
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/IR.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IR
+# 
+# Top level modules:
+# 	IR
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decodificaReg
+# 
+# Top level modules:
+# 	decodificaReg
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/addsub.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module addsub
+# 
+# Top level modules:
+# 	addsub
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/quartus {C:/Users/mlfca/Desktop/mult-processor/quartus/lpmRAM.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lpmRAM
+# 
+# Top level modules:
+# 	lpmRAM
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/building {C:/Users/mlfca/Desktop/mult-processor/building/ram-proc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram_proc
+# 
+# Top level modules:
+# 	ram_proc
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/regW.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regW
+# 
+# Top level modules:
+# 	regW
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/PC.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# 
+vsim +altera -Lf altera_mf_ver -do mult-processor_run_msim_rtl_verilog.do -l msim_transcript -gui work.ram_proc
+# vsim +altera -Lf altera_mf_ver -do mult-processor_run_msim_rtl_verilog.do -l msim_transcript -gui work.ram_proc 
+# Loading work.ram_proc
+# Loading work.lpmRAM
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.processor
+# Loading work.counter
+# Loading work.reg16bitsP
+# Loading work.PC
+# Loading work.reg16bitsN
+# Loading work.regW
+# Loading work.IR
+# Loading work.decodificaReg
+# Loading work.multiplexador
+# Loading work.addsub
+# do mult-processor_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsP.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg16bitsP
+# 
+# Top level modules:
+# 	reg16bitsP
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/reg16bitsN.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg16bitsN
+# 
+# Top level modules:
+# 	reg16bitsN
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/processor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module processor
+# 
+# Top level modules:
+# 	processor
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/multiplexador.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module multiplexador
+# 
+# Top level modules:
+# 	multiplexador
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/IR.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IR
+# 
+# Top level modules:
+# 	IR
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/decodificaReg.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module decodificaReg
+# 
+# Top level modules:
+# 	decodificaReg
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/counter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/addsub.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module addsub
+# 
+# Top level modules:
+# 	addsub
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/quartus {C:/Users/mlfca/Desktop/mult-processor/quartus/lpmRAM.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module lpmRAM
+# 
+# Top level modules:
+# 	lpmRAM
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/building {C:/Users/mlfca/Desktop/mult-processor/building/ram-proc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ram_proc
+# 
+# Top level modules:
+# 	ram_proc
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/regW.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regW
+# 
+# Top level modules:
+# 	regW
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/PC.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# 
+do C:/Users/mlfca/Desktop/mult-processor/sims/ram-proc-enhanced.do
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Aluno  Hostname: DESKTOP-PALV0JQ  ProcessID: 7844
+# 
+#           Attempting to use alternate WLF file "./wlft72sr99".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft72sr99
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+run -all
