@@ -1,9 +1,10 @@
+
 module decodificaReg(W, En, Y);
 
 	/***************************************************************************
 	* Decodificador responsavel por receber o numero do registrador escolhido
-	* pela instrucao e emitir um sinal que possibilite a emissao da saida deste
-	* 
+	* pela instrucao e emitir um sinal que possibilite a selecao da saida deste
+	* pelo multiplexador
 	***************************************************************************/
 
 	input [2:0] W;
