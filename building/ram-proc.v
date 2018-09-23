@@ -3,13 +3,14 @@ module ram_proc(input clock, resetN, run,
 					 output done);
 	
 	wire [15:0] ramQ, addr, din;
+	wire [5:0] physicalAddr;
 	wire w;
 	
-	lpmRAM ram(addr[5:0], clock, din, w, ramQ);
+	lpmRAM ram(physicalAddr, clock, din, w, ramQ);
+	tlb TLB(addr, physicalAddr);
 	processor proc(ramQ, resetN, clock, run, done, addr, din, w);
 	
 endmodule
-
 
 // Tentativa de uso para a placa
 

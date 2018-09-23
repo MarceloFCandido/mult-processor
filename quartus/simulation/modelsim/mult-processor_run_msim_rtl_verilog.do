@@ -17,4 +17,5 @@ vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/quar
 vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/building {C:/Users/mlfca/Desktop/mult-processor/building/ram-proc.v}
 vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/regW.v}
 vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/PC.v}
+vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/tlb.v}
 

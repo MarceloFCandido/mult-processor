@@ -67,6 +67,7 @@ module processor(DIN, resetN, clock, run, done, ADDR, DOUT, W);  //Modelsim
         // Etapa 0
         if (run) begin
             case (counterOut)  // baseado nas etapas
+					 // Etapa 0
                 // Decodificando instrucao e colocando no IR - Primeiro pulso
                 3'b000: begin
                     // Resetando sinais de controle
@@ -159,7 +160,7 @@ module processor(DIN, resetN, clock, run, done, ADDR, DOUT, W);  //Modelsim
                         4'b1011: begin		// Load
                             decoutgen = 8'b00000000; // Instantaneo nesse passo
                         end
-                        4'b1010 :begin		//Store
+                        4'b1010 :begin		// Store
                             decoutgen = decout0; //Instantaneo nesse passo
                             dOutIn = 1'b1;
                             W_D = 1'b1;
@@ -211,7 +212,7 @@ module processor(DIN, resetN, clock, run, done, ADDR, DOUT, W);  //Modelsim
                             write = 1'b1;
                             done = 1'b1;
                             decG = 1'b1;
-                            clear = 1'b1;	//Pq aumentou o numero de ciclos
+                            clear = 1'b1;	// Pq aumentou o numero de ciclos
                         end
                     endcase
                 end
@@ -220,19 +221,19 @@ module processor(DIN, resetN, clock, run, done, ADDR, DOUT, W);  //Modelsim
                 3'b101: begin
                     case (IRout[3:0])
                         4'b1011: begin		// Load
-                        decDIN = 1'b0;
-                        write = 1'b0;
-                        decoutgen = 8'b10000000;	// Instantaneo nesse passo
-                        addrIn = 1'b1;				// Instantaneo nesse passo
-                        done = 1'b1;
+									decDIN = 1'b0;
+									write = 1'b0;
+									decoutgen = 8'b10000000;	// Instantaneo nesse passo
+									addrIn = 1'b1;				// Instantaneo nesse passo
+									done = 1'b1;
                         end
 
                         4'b1010 :begin		// Store
-                            decoutgen = 8'b10000000; // Instantaneo nesse passo
-                            dOutIn = 1'b0;
-                            done = 1'b1;
-                            addrIn = 1'b0;		// Instantaneo nesse passo
-                            end
+										decoutgen = 8'b10000000; // Instantaneo nesse passo
+										dOutIn = 1'b0;
+										done = 1'b1;
+										addrIn = 1'b0;		// Instantaneo nesse passo
+                           end
                     endcase
 
                 end

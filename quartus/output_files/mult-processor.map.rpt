@@ -1,6 +1,6 @@
 Analysis & Synthesis report for mult-processor
-Sat Sep 22 15:08:30 2018
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Sun Sep 23 15:05:15 2018
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -37,9 +37,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  29. altsyncram Parameter Settings by Entity Instance
  30. Port Connectivity Checks: "processor:proc|decodificaReg:dec1"
  31. Port Connectivity Checks: "processor:proc|decodificaReg:dec0"
- 32. Port Connectivity Checks: "processor:proc"
- 33. Elapsed Time Per Partition
- 34. Analysis & Synthesis Messages
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
 
 
 
@@ -65,8 +64,8 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Sep 22 15:08:30 2018           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Sun Sep 23 15:05:15 2018           ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; mult-processor                                  ;
 ; Top-level Entity Name              ; ram_proc                                        ;
 ; Family                             ; Cyclone II                                      ;
@@ -196,6 +195,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; ../building/ram-proc.v           ; yes             ; User Verilog HDL File            ; C:/Users/mlfca/Desktop/mult-processor/building/ram-proc.v               ;         ;
 ; ../modules/regW.v                ; yes             ; User Verilog HDL File            ; C:/Users/mlfca/Desktop/mult-processor/modules/regW.v                    ;         ;
 ; ../modules/PC.v                  ; yes             ; User Verilog HDL File            ; C:/Users/mlfca/Desktop/mult-processor/modules/PC.v                      ;         ;
+; ../modules/tlb.v                 ; yes             ; User Verilog HDL File            ; C:/Users/mlfca/Desktop/mult-processor/modules/tlb.v                     ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -384,22 +384,23 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
-; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |ram_proc|processor:proc|PC:pgmCnt|out[0]            ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |ram_proc|processor:proc|Mux30                       ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |ram_proc|processor:proc|Mux2                        ;
-; 11:1               ; 4 bits    ; 28 LEs        ; 20 LEs               ; 8 LEs                  ; No         ; |ram_proc|processor:proc|addsub:as|Mux5              ;
-; 11:1               ; 4 bits    ; 28 LEs        ; 20 LEs               ; 8 LEs                  ; No         ; |ram_proc|processor:proc|addsub:as|Mux8              ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |ram_proc|processor:proc|addsub:as|Mux3              ;
-; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |ram_proc|processor:proc|addsub:as|Mux12             ;
-; 10:1               ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |ram_proc|processor:proc|multiplexador:mux0|saida[3] ;
-; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |ram_proc|processor:proc|addsub:as|Mux15             ;
-; 15:1               ; 7 bits    ; 70 LEs        ; 14 LEs               ; 56 LEs                 ; No         ; |ram_proc|processor:proc|Mux9                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
+; 3:1                ; 15 bits   ; 30 LEs        ; 15 LEs               ; 15 LEs                 ; Yes        ; |ram_proc|processor:proc|PC:pgmCnt|out[15]            ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |ram_proc|processor:proc|Mux53                        ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |ram_proc|processor:proc|Mux2                         ;
+; 11:1               ; 4 bits    ; 28 LEs        ; 20 LEs               ; 8 LEs                  ; No         ; |ram_proc|processor:proc|addsub:as|Mux5               ;
+; 11:1               ; 4 bits    ; 28 LEs        ; 20 LEs               ; 8 LEs                  ; No         ; |ram_proc|processor:proc|addsub:as|Mux11              ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |ram_proc|processor:proc|addsub:as|Mux2               ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |ram_proc|processor:proc|addsub:as|Mux12              ;
+; 10:1               ; 16 bits   ; 96 LEs        ; 96 LEs               ; 0 LEs                  ; No         ; |ram_proc|processor:proc|multiplexador:mux0|saida[10] ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |ram_proc|processor:proc|addsub:as|Mux15              ;
+; 16:1               ; 6 bits    ; 60 LEs        ; 36 LEs               ; 24 LEs                 ; No         ; |ram_proc|tlb:TLB|Mux0                                ;
+; 15:1               ; 7 bits    ; 70 LEs        ; 14 LEs               ; 56 LEs                 ; No         ; |ram_proc|processor:proc|Mux24                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -641,15 +642,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:proc"                                                                            ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; ADDR[15..6] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -663,9 +655,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
+Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Sep 22 15:08:24 2018
+    Info: Processing started: Sun Sep 23 15:05:08 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mult-processor -c mult-processor
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/mult-processor/modules/reg16bitsp.v
@@ -692,6 +684,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file /users/
     Info (12023): Found entity 1: regW
 Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/mult-processor/modules/pc.v
     Info (12023): Found entity 1: PC
+Info (12021): Found 1 design units, including 1 entities, in source file /users/mlfca/desktop/mult-processor/modules/tlb.v
+    Info (12023): Found entity 1: tlb
 Info (12127): Elaborating entity "ram_proc" for the top level hierarchy
 Info (12128): Elaborating entity "lpmRAM" for hierarchy "lpmRAM:ram"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "lpmRAM:ram|altsyncram:altsyncram_component"
@@ -715,110 +709,272 @@ Info (12133): Instantiated megafunction "lpmRAM:ram|altsyncram:altsyncram_compon
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hjf1.tdf
     Info (12023): Found entity 1: altsyncram_hjf1
 Info (12128): Elaborating entity "altsyncram_hjf1" for hierarchy "lpmRAM:ram|altsyncram:altsyncram_component|altsyncram_hjf1:auto_generated"
+Info (12128): Elaborating entity "tlb" for hierarchy "tlb:TLB"
+Warning (10235): Verilog HDL Always Construct warning at tlb.v(31): variable "tlb_valid" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at tlb.v(32): variable "tlb_valid" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at tlb.v(33): variable "tlb_valid" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at tlb.v(34): variable "tlb_valid" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at tlb.v(35): variable "tlb_valid" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at tlb.v(36): variable "tlb_valid" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at tlb.v(37): variable "tlb_valid" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at tlb.v(38): variable "tlb_valid" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at tlb.v(43): variable "cont" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at tlb.v(44): variable "cont" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at tlb.v(45): variable "cont" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at tlb.v(46): variable "cont" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10240): Verilog HDL Always Construct warning at tlb.v(28): inferring latch(es) for variable "physical_addr", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at tlb.v(28): inferring latch(es) for variable "miss", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at tlb.v(28): inferring latch(es) for variable "tlb_valid", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at tlb.v(28): inferring latch(es) for variable "cont", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "miss" at tlb.v(28)
+Info (10041): Inferred latch for "cont[0]" at tlb.v(42)
+Info (10041): Inferred latch for "cont[1]" at tlb.v(42)
+Info (10041): Inferred latch for "cont[2]" at tlb.v(42)
+Info (10041): Inferred latch for "physical_addr[0]" at tlb.v(42)
+Info (10041): Inferred latch for "physical_addr[1]" at tlb.v(42)
+Info (10041): Inferred latch for "physical_addr[2]" at tlb.v(42)
+Info (10041): Inferred latch for "physical_addr[3]" at tlb.v(42)
+Info (10041): Inferred latch for "physical_addr[4]" at tlb.v(42)
+Info (10041): Inferred latch for "physical_addr[5]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_valid[0]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_valid[1]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_valid[2]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_valid[3]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_valid[4]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_valid[5]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_valid[6]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_valid[7]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][0]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][1]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][2]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][3]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][4]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][5]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][6]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][7]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][8]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][9]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][10]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][11]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][12]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][13]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][14]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[0][15]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][0]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][1]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][2]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][3]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][4]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][5]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][6]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][7]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][8]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][9]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][10]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][11]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][12]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][13]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][14]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[1][15]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][0]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][1]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][2]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][3]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][4]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][5]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][6]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][7]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][8]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][9]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][10]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][11]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][12]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][13]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][14]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[2][15]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][0]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][1]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][2]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][3]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][4]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][5]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][6]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][7]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][8]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][9]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][10]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][11]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][12]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][13]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][14]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[3][15]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][0]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][1]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][2]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][3]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][4]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][5]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][6]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][7]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][8]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][9]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][10]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][11]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][12]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][13]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][14]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[4][15]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][0]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][1]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][2]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][3]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][4]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][5]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][6]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][7]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][8]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][9]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][10]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][11]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][12]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][13]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][14]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[5][15]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][0]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][1]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][2]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][3]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][4]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][5]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][6]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][7]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][8]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][9]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][10]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][11]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][12]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][13]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][14]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[6][15]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][0]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][1]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][2]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][3]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][4]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][5]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][6]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][7]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][8]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][9]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][10]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][11]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][12]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][13]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][14]" at tlb.v(42)
+Info (10041): Inferred latch for "tlb_lines[7][15]" at tlb.v(42)
 Info (12128): Elaborating entity "processor" for hierarchy "processor:proc"
-Warning (10036): Verilog HDL or VHDL warning at processor.v(53): object "teste" assigned a value but never read
-Warning (10235): Verilog HDL Always Construct warning at processor.v(72): variable "run" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at processor.v(125): variable "decout1" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at processor.v(134): variable "outG" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at processor.v(135): variable "decout1" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at processor.v(138): variable "decout0" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at processor.v(146): variable "decout1" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at processor.v(151): variable "decout1" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at processor.v(155): variable "decout0" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at processor.v(180): variable "decout0" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10235): Verilog HDL Always Construct warning at processor.v(191): variable "decout1" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10270): Verilog HDL Case Statement warning at processor.v(239): incomplete case statement has no default case item
-Warning (10270): Verilog HDL Case Statement warning at processor.v(73): incomplete case statement has no default case item
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "decDIN", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "write", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "decoutgen", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "addrIn", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "done", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "dOutIn", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "sigG", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "ctrlULA", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "decG", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "clear", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "W_D", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "incr_pc", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "sigA", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at processor.v(70): inferring latch(es) for variable "IRin", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "IRin" at processor.v(72)
-Info (10041): Inferred latch for "sigA" at processor.v(72)
-Info (10041): Inferred latch for "incr_pc" at processor.v(72)
-Info (10041): Inferred latch for "W_D" at processor.v(72)
-Info (10041): Inferred latch for "clear" at processor.v(72)
-Info (10041): Inferred latch for "decG" at processor.v(72)
-Info (10041): Inferred latch for "ctrlULA[0]" at processor.v(72)
-Info (10041): Inferred latch for "ctrlULA[1]" at processor.v(72)
-Info (10041): Inferred latch for "ctrlULA[2]" at processor.v(72)
-Info (10041): Inferred latch for "sigG" at processor.v(72)
-Info (10041): Inferred latch for "dOutIn" at processor.v(72)
-Info (10041): Inferred latch for "done" at processor.v(72)
-Info (10041): Inferred latch for "addrIn" at processor.v(72)
-Info (10041): Inferred latch for "decoutgen[0]" at processor.v(72)
-Info (10041): Inferred latch for "decoutgen[1]" at processor.v(72)
-Info (10041): Inferred latch for "decoutgen[2]" at processor.v(72)
-Info (10041): Inferred latch for "decoutgen[3]" at processor.v(72)
-Info (10041): Inferred latch for "decoutgen[4]" at processor.v(72)
-Info (10041): Inferred latch for "decoutgen[5]" at processor.v(72)
-Info (10041): Inferred latch for "decoutgen[6]" at processor.v(72)
-Info (10041): Inferred latch for "decoutgen[7]" at processor.v(72)
-Info (10041): Inferred latch for "write" at processor.v(72)
-Info (10041): Inferred latch for "decDIN" at processor.v(72)
+Warning (10235): Verilog HDL Always Construct warning at processor.v(68): variable "run" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at processor.v(113): variable "decout1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at processor.v(122): variable "outG" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at processor.v(123): variable "decout1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at processor.v(126): variable "decout0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at processor.v(136): variable "decout1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at processor.v(140): variable "decout1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at processor.v(144): variable "decout0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at processor.v(163): variable "decout0" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10235): Verilog HDL Always Construct warning at processor.v(174): variable "decout1" is read inside the Always Construct but isn't in the Always Construct's Event Control
+Warning (10270): Verilog HDL Case Statement warning at processor.v(221): incomplete case statement has no default case item
+Warning (10270): Verilog HDL Case Statement warning at processor.v(69): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "decDIN", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "write", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "decoutgen", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "addrIn", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "done", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "dOutIn", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "sigG", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "ctrlULA", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "decG", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "clear", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "W_D", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "incr_pc", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "sigA", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at processor.v(66): inferring latch(es) for variable "IRin", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "IRin" at processor.v(68)
+Info (10041): Inferred latch for "sigA" at processor.v(68)
+Info (10041): Inferred latch for "incr_pc" at processor.v(68)
+Info (10041): Inferred latch for "W_D" at processor.v(68)
+Info (10041): Inferred latch for "clear" at processor.v(68)
+Info (10041): Inferred latch for "decG" at processor.v(68)
+Info (10041): Inferred latch for "ctrlULA[0]" at processor.v(68)
+Info (10041): Inferred latch for "ctrlULA[1]" at processor.v(68)
+Info (10041): Inferred latch for "ctrlULA[2]" at processor.v(68)
+Info (10041): Inferred latch for "sigG" at processor.v(68)
+Info (10041): Inferred latch for "dOutIn" at processor.v(68)
+Info (10041): Inferred latch for "done" at processor.v(68)
+Info (10041): Inferred latch for "addrIn" at processor.v(68)
+Info (10041): Inferred latch for "decoutgen[0]" at processor.v(68)
+Info (10041): Inferred latch for "decoutgen[1]" at processor.v(68)
+Info (10041): Inferred latch for "decoutgen[2]" at processor.v(68)
+Info (10041): Inferred latch for "decoutgen[3]" at processor.v(68)
+Info (10041): Inferred latch for "decoutgen[4]" at processor.v(68)
+Info (10041): Inferred latch for "decoutgen[5]" at processor.v(68)
+Info (10041): Inferred latch for "decoutgen[6]" at processor.v(68)
+Info (10041): Inferred latch for "decoutgen[7]" at processor.v(68)
+Info (10041): Inferred latch for "write" at processor.v(68)
+Info (10041): Inferred latch for "decDIN" at processor.v(68)
 Info (12128): Elaborating entity "counter" for hierarchy "processor:proc|counter:c0"
 Info (12128): Elaborating entity "reg16bitsP" for hierarchy "processor:proc|reg16bitsP:reg0"
-Warning (10230): Verilog HDL assignment warning at reg16bitsP.v(14): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at reg16bitsP.v(13): truncated value with size 32 to match size of target (16)
 Info (12128): Elaborating entity "reg16bitsP" for hierarchy "processor:proc|reg16bitsP:reg6"
-Warning (10230): Verilog HDL assignment warning at reg16bitsP.v(14): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at reg16bitsP.v(13): truncated value with size 32 to match size of target (16)
 Info (12128): Elaborating entity "PC" for hierarchy "processor:proc|PC:pgmCnt"
-Warning (10230): Verilog HDL assignment warning at PC.v(8): truncated value with size 32 to match size of target (16)
-Warning (10230): Verilog HDL assignment warning at PC.v(14): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at PC.v(15): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at PC.v(21): truncated value with size 32 to match size of target (16)
 Info (12128): Elaborating entity "reg16bitsP" for hierarchy "processor:proc|reg16bitsP:A"
-Warning (10230): Verilog HDL assignment warning at reg16bitsP.v(14): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at reg16bitsP.v(13): truncated value with size 32 to match size of target (16)
 Info (12128): Elaborating entity "reg16bitsN" for hierarchy "processor:proc|reg16bitsN:G"
 Info (12128): Elaborating entity "reg16bitsP" for hierarchy "processor:proc|reg16bitsP:addressReg"
-Warning (10230): Verilog HDL assignment warning at reg16bitsP.v(14): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at reg16bitsP.v(13): truncated value with size 32 to match size of target (16)
 Info (12128): Elaborating entity "regW" for hierarchy "processor:proc|regW:writeReg"
 Info (12128): Elaborating entity "IR" for hierarchy "processor:proc|IR:ir0"
 Info (12128): Elaborating entity "decodificaReg" for hierarchy "processor:proc|decodificaReg:dec0"
 Info (12128): Elaborating entity "multiplexador" for hierarchy "processor:proc|multiplexador:mux0"
-Warning (10240): Verilog HDL Always Construct warning at multiplexador.v(13): inferring latch(es) for variable "saida", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "saida[0]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[1]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[2]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[3]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[4]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[5]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[6]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[7]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[8]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[9]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[10]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[11]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[12]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[13]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[14]" at multiplexador.v(17)
-Info (10041): Inferred latch for "saida[15]" at multiplexador.v(17)
+Warning (10240): Verilog HDL Always Construct warning at multiplexador.v(18): inferring latch(es) for variable "saida", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "saida[0]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[1]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[2]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[3]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[4]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[5]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[6]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[7]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[8]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[9]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[10]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[11]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[12]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[13]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[14]" at multiplexador.v(23)
+Info (10041): Inferred latch for "saida[15]" at multiplexador.v(23)
 Info (12128): Elaborating entity "addsub" for hierarchy "processor:proc|addsub:as"
-Warning (10270): Verilog HDL Case Statement warning at addsub.v(18): incomplete case statement has no default case item
-Warning (10240): Verilog HDL Always Construct warning at addsub.v(17): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "out[0]" at addsub.v(17)
-Info (10041): Inferred latch for "out[1]" at addsub.v(17)
-Info (10041): Inferred latch for "out[2]" at addsub.v(17)
-Info (10041): Inferred latch for "out[3]" at addsub.v(17)
-Info (10041): Inferred latch for "out[4]" at addsub.v(17)
-Info (10041): Inferred latch for "out[5]" at addsub.v(17)
-Info (10041): Inferred latch for "out[6]" at addsub.v(17)
-Info (10041): Inferred latch for "out[7]" at addsub.v(17)
-Info (10041): Inferred latch for "out[8]" at addsub.v(17)
-Info (10041): Inferred latch for "out[9]" at addsub.v(17)
-Info (10041): Inferred latch for "out[10]" at addsub.v(17)
-Info (10041): Inferred latch for "out[11]" at addsub.v(17)
-Info (10041): Inferred latch for "out[12]" at addsub.v(17)
-Info (10041): Inferred latch for "out[13]" at addsub.v(17)
-Info (10041): Inferred latch for "out[14]" at addsub.v(17)
-Info (10041): Inferred latch for "out[15]" at addsub.v(17)
+Warning (10270): Verilog HDL Case Statement warning at addsub.v(20): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at addsub.v(19): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "out[0]" at addsub.v(19)
+Info (10041): Inferred latch for "out[1]" at addsub.v(19)
+Info (10041): Inferred latch for "out[2]" at addsub.v(19)
+Info (10041): Inferred latch for "out[3]" at addsub.v(19)
+Info (10041): Inferred latch for "out[4]" at addsub.v(19)
+Info (10041): Inferred latch for "out[5]" at addsub.v(19)
+Info (10041): Inferred latch for "out[6]" at addsub.v(19)
+Info (10041): Inferred latch for "out[7]" at addsub.v(19)
+Info (10041): Inferred latch for "out[8]" at addsub.v(19)
+Info (10041): Inferred latch for "out[9]" at addsub.v(19)
+Info (10041): Inferred latch for "out[10]" at addsub.v(19)
+Info (10041): Inferred latch for "out[11]" at addsub.v(19)
+Info (10041): Inferred latch for "out[12]" at addsub.v(19)
+Info (10041): Inferred latch for "out[13]" at addsub.v(19)
+Info (10041): Inferred latch for "out[14]" at addsub.v(19)
+Info (10041): Inferred latch for "out[15]" at addsub.v(19)
 Warning (13012): Latch processor:proc|done has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal processor:proc|counter:c0|out[1]
 Warning (13012): Latch processor:proc|clear has unsafe behavior
@@ -934,10 +1090,10 @@ Info (21057): Implemented 754 device resources after synthesis - the final resou
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 734 logic cells
     Info (21064): Implemented 16 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 145 warnings
-    Info: Peak virtual memory: 4644 megabytes
-    Info: Processing ended: Sat Sep 22 15:08:31 2018
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 160 warnings
+    Info: Peak virtual memory: 412 megabytes
+    Info: Processing ended: Sun Sep 23 15:05:15 2018
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Total CPU time (on all processors): 00:00:06
 
 

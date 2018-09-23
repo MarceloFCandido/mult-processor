@@ -82,6 +82,12 @@
 # 
 # Top level modules:
 # 	PC
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/tlb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tlb
+# 
+# Top level modules:
+# 	tlb
 # 
 vsim +altera -Lf altera_mf_ver -do mult-processor_run_msim_rtl_verilog.do -l msim_transcript -gui work.ram_proc
 # vsim +altera -Lf altera_mf_ver -do mult-processor_run_msim_rtl_verilog.do -l msim_transcript -gui work.ram_proc 
@@ -90,6 +96,7 @@ vsim +altera -Lf altera_mf_ver -do mult-processor_run_msim_rtl_verilog.do -l msi
 # Loading altera_mf_ver.altsyncram
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.tlb
 # Loading work.processor
 # Loading work.counter
 # Loading work.reg16bitsP
@@ -180,17 +187,59 @@ vsim +altera -Lf altera_mf_ver -do mult-processor_run_msim_rtl_verilog.do -l msi
 # 
 # Top level modules:
 # 	PC
+# vlog -vlog01compat -work work +incdir+C:/Users/mlfca/Desktop/mult-processor/modules {C:/Users/mlfca/Desktop/mult-processor/modules/tlb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tlb
 # 
-do C:/Users/mlfca/Desktop/mult-processor/sims/ram-proc-enhanced.do
+# Top level modules:
+# 	tlb
+# 
+do C:/Users/mlfca/Desktop/mult-processor/sims/ram-proc-enhanced-wtlb.do
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 # 
 #           File in use by: Aluno  Hostname: DESKTOP-PALV0JQ  ProcessID: 7844
 # 
-#           Attempting to use alternate WLF file "./wlft72sr99".
+#           Attempting to use alternate WLF file "./wlftvt5jyh".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft72sr99
+#           Using alternate file: ./wlftvt5jyh
 # 
 # .main_pane.wave.interior.cs.body.pw.wf
 # 1
 run -all
+# Warning : Address pointed at port A is out of bound!
+# Time: 15150  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 15150  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 16050  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 16050  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 16950  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 16950  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 17850  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 17850  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 18750  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 18750  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 19650  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 19650  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 20550  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 20550  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 21450  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 21450  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 22350  Instance: ram_proc.ram.altsyncram_component
+# Warning : Address pointed at port A is out of bound!
+# Time: 22350  Instance: ram_proc.ram.altsyncram_component
