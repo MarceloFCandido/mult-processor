@@ -80,7 +80,7 @@ module processor(DIN, resetN, clock, run, done, ADDR, DOUT, W);  //Modelsim
                     clear = 1'b0;
                     incr_pc = 1'b1;
                     IRin = 1'b1;
-                    addrIn = 1'b1;
+                    addrIn = 1'b0;
                     done = 1'b0;
                     dOutIn = 1'b0;
                     W_D = 1'b0;

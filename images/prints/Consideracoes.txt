@@ -1,0 +1,27 @@
+Todas as instruções mostrar o IRout e como ele se relaciona: EX
+
+	0000000111
+	
+	OPCODE : 111 (MVI)
+	RX: 000	(Registrador 0)
+	RY: Nao influencia?
+
+Explicar cada passo mostrando as variações de variáveis de controle em relação a etapa anterior e o motivo de terem variado
+Sempre falar que a instrução já está no registrador de instruções em sua respectiva etapa
+
+Step00 MVI (Explicar)
+Step01 MVI (Explicar)
+
+Falar que a decodificação está ocorrendo (citar dec0 e dec1) e a diferença do controlReg neste caso
+(Pois estamos preparando a proxima instrução)
+
+Step100 MVI (Explicar)
+Mostrar como as variaveis de controle foram colocadas para que fosse possivel escrever o dado retornado da memoria 
+para o registrador
+
+Step 10 do LOAD e STORE
+Relacionar a saida do registrador de endereços com controlReg, dec1 e RegY
+
+
+
+
